@@ -1,0 +1,23 @@
+<aura:component >
+    <aura:attribute name="result" type="Integer"/>
+    <aura:attribute name="actionName" type="string"/>
+    
+     <lightning:card title="Application: calculatar" >
+         
+         <lightning:input placeholder="input first number" aura:id="txt1"/>
+         <br/>  
+         <lightning:input placeholder="input second number" aura:id="txt2"/>
+         <br/>
+         <lightning:button label="Add" onclick="{!c.sum}"/>
+          <lightning:button label="subtract" onclick="{!c.sub}"/>
+         
+          <lightning:button label="division" onclick="{!c.div}"/>
+         
+          <lightning:button label="multiplication" onclick="{!c.mul}"/>
+         <br/>
+         <br/>
+        {!v.actionName}:  {!v.result}
+    </lightning:card>
+                   
+                   
+</aura:component>

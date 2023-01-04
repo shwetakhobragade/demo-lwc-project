@@ -1,0 +1,22 @@
+<apex:page standardController="Employee__c" >
+    <head>
+        <style>
+        
+        </style>
+    </head>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="New Employee">
+                <apex:inputField value="{!Employee__c.First_name__c}"/>
+                <apex:inputField value="{!Employee__c.Last_name__c}"/>
+                <apex:inputField value="{!Employee__c.State__c}"/>
+                <apex:inputField value="{!Employee__c.Country__c}"/>
+                <apex:inputField value="{!Employee__c.Email__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:commandButton action="{!Save}" value="Save"/>
+                <apex:commandButton action="{!Cancel}" value="Cancel"/>
+          </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

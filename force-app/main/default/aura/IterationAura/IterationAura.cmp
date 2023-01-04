@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="games" type="string[]"
+                    default="{'Cricket','Football','tennis]"/>
+    <h1>List of Games</h1>
+    <aura:iteration items="{!v.games}" var="game">
+        <ul>
+            <li>{!game}</li>
+        </ul>
+    </aura:iteration>
+</aura:component>

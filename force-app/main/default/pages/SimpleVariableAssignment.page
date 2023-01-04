@@ -1,0 +1,9 @@
+<apex:page >
+    <h1>
+        Current username
+    </h1>
+    <p>
+       Current user firstname :- {!$User.FirstName}
+        
+    </p>
+</apex:page>

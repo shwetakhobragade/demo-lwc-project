@@ -1,0 +1,9 @@
+<apex:page standardController="battle_station__c" recordSetVar="battle_stations">
+    <apex:pageBlock title="battle station list">
+    <apex:pageBlockTable value="{!battle_stations}" var="battlest">
+    <apex:column value="{!battlest.Name}"/>
+    <apex:column value="{!battlest.project_status__c}"/>
+    <apex:column value="{!battlest.weapon_status__c}"/>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

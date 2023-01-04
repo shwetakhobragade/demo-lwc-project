@@ -1,0 +1,6 @@
+<apex:page >
+    <h1>
+        congatulations
+    </h1>
+    this is your new page
+</apex:page>

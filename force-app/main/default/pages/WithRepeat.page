@@ -1,0 +1,7 @@
+<apex:page standardController="contact" recordSetVar="contacts">
+    <apex:repeat value="{!contacts}" var="con">
+        <div class="name">
+            <apex:outputText value="{!con.firstname+'/'+con.lastname}"/>
+        </div>
+    </apex:repeat>
+</apex:page>

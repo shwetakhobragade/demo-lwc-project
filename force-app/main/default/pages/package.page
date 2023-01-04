@@ -1,0 +1,8 @@
+<apex:page >
+    <!--begin default content remove this-->
+    <h1>
+        congratulations
+    </h1>
+    this is your new page
+    <!--end default content remove this-->
+</apex:page>

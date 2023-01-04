@@ -1,0 +1,6 @@
+<apex:page controller="DemoController">
+    congratulations <h1> {!name}
+    
+    </h1>
+    you called first getter successfully.
+</apex:page>

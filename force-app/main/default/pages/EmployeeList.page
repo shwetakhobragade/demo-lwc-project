@@ -1,0 +1,12 @@
+<apex:page standardController="Employee__c" recordSetVar="Employees">
+    <apex:form >
+        <apex:pageblock title="Employee List">
+            <apex:pageBlockTable value="{!Employees}" var="emp">
+                <apex:column headerValue="Employee Name"/>
+                <apex:commandLink action="/{!emp.id}">
+                    {!emp.First_name__c}
+                </apex:commandLink>
+            </apex:pageBlockTable>  
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

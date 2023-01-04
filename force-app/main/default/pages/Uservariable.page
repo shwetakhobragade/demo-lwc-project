@@ -1,0 +1,8 @@
+<apex:page >sidebar="false" showheader="false">
+    <h1>
+        congartulations
+    </h1>
+    <p>
+        hello{!$User.FirstName}
+    </p>
+</apex:page>
