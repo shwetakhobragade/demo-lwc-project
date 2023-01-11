@@ -1,9 +1,13 @@
 <template>
-    <lightning-input
-            name="enter-search"
-            label="Search when user hits the 'enter' key"
+    <lightning-card title="please Search">
+        <lightning-button label="Search" icon-name="utility:download" slot="actions" onclick={handleClick}></lightning-button>
+    <lightning-input class="git-input-padding"
+            name="enter-search" onchange={handleClick}
+            label="Click on search after typing."
             type="search"
     
         
         ></lightning-input>
+    </lightning-card>
+    
 </template>
