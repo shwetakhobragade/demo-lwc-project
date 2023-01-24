@@ -1,0 +1,15 @@
+<template>
+    <div class="xyz">
+        Welcome
+        <lightning-card title="please Search">
+            <lightning-button label="Search" icon-name="utility:download" slot="actions" onclick={handleClick}></lightning-button>
+        <lightning-input class="git-input-padding"
+                name="enter-search" 
+                label="Click on search after typing."
+                type="search"
+            ></lightning-input>
+          {searchText}
+        </lightning-card>
+    </div>
+<!-- <c-second-web-component person-name={searchText}></c-second-web-component>-->
+</template>

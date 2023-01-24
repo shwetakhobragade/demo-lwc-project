@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>massage channel</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This is to check is term valid</description>
+        <fieldName>isTermvalid</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This whould be the word to searched</description>
+        <fieldName>searchTerm</fieldName>
+    </lightningMessageFields>
+    <masterLabel>gitsearchmassagingchannel</masterLabel>
+</LightningMessageChannel>
