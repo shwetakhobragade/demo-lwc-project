@@ -3,6 +3,15 @@
         <div class="card-image">
           <figure class="image is-4by3">
             <img src="https://images.pexels.com/photos/6898861/pexels-photo-6898861.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Placeholder image">
+            <lightning-button label="Submit" slot="actions" onclick={handleClick}></lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="number" vaue={fNumber} name="fstNumber"  label="Enter First Number" onchange={handleChange} ></lightning-input>
+            <lightning-input type="number" vaue={sNumber} name="scdNumber"  label="Enter Second Number" onchange={handleChange} ></lightning-input>
+        </p>
+        <p slot="footer">
+            <b>{sum}</b>    
+            <b>{greeting}</b>    
+        </p>
           </figure>
         </div>
       </div> 
