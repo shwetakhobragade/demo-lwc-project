@@ -1,0 +1,10 @@
+div {
+    color: rgb(0, 153, 255);
+    border: 10px solid currentcolor;
+  }
+  div {
+    background-color: rgb(190, 8, 87);
+  }
+  :host{
+    background-color: deeppink;
+}

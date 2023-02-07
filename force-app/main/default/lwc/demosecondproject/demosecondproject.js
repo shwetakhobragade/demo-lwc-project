@@ -1,10 +1,14 @@
 import { LightningElement, wire,api } from 'lwc';
 import { subscribe, unsubscribe, APPLICATION_SCOPE, MessageContext} from 'lightning/messageService';
 import searchMessage from '@salesforce/messageChannel/searchgit__c';
+import insertContact from '@salesforce/apex/demoGitclass.insertContact';
+import insertContact1 from '@salesforce/apex/demoGitclass.insertContact1';
 const QUERY_USER_ENDPOINT_URL='https://api.github.com/search/users?q=';
 export default class demosecondproject extends LightningElement {
     @api personName;
     retrivedusers=[];
+    selecteduser ='';
+    selecteduserArray=[];
     subscription = null;
 
     @wire(MessageContext)
@@ -48,4 +52,27 @@ export default class demosecondproject extends LightningElement {
         unsubscribe(this.subscription);
         this.subscription = null;
     }
+    handleonuserclicked(event){
+       
+        console.log(event.detail); 
+        
+    this.selecteduser=event.detail;
+    this.selecteduserArray.push(event.detail);
+    
+   
+    }
+    get showuser(){
+        return this.selecteduser.length != 0 ? true: false;
+    }
+   async handleSaveUserClick(){
+        console.log('save user in SF');
+        try{
+            const issuccess=await insertContact1({accNameList:this.selecteduserArray});
+            
+            console.log('created creation'+issuccess);
+            }catch(error){
+            console.log(error);
+            }
+                }
+    
 }
