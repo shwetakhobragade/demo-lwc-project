@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, } from 'lwc';
 
 import { loadStyle } from 'lightning/platformResourceLoader';
 import bulma from '@salesforce/resourceUrl/bulma';
@@ -6,27 +6,16 @@ export default class Bulma extends LightningElement {
     connectedCallback() {
         loadStyle(this, bulma);
     }
-     fNumber;
-     sNumber;
-    
-     errors;
-    
-       
-    handleClick(){
-        getSumResult({firstNumber:this.fNumber,secondNumber:this.sNumber})
-        .then(result=>{
-            this.sum = result;
-        })
-        .catch(error=>{
-            this.errors = error;
-        });
-    }
-    handleChange(event){
-        if(event.target.name==='fstNumber'){
-            this.fNumber = event.target.value;            
+    firstName;
+    LastName;
+
+    handleChanges(event){
+        if(event.target.name==='firstName'){
+            this.firstName= event.target.value;
         }
-        else if(event.target.name==='scdNumber'){
-            this.sNumber = event.target.value;            
+        if(event.target.name==='LastName'){
+            this.LastName= event.target.value;
         }
+        
     }
 }
