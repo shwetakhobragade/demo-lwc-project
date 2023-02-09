@@ -20,7 +20,6 @@ public with sharing class demoGitclass {
             accList.add(new Account(Name =contactName));
         }
     }
-        
         Boolean isSuccessful=false;
         try {
             if(!accList.isEmpty()){

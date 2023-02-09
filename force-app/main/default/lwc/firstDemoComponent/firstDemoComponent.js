@@ -6,7 +6,6 @@ export default class FirstComponent extends LightningElement {
     
     @wire(MessageContext)
     messageContext;
-
     handleClick(event){
     let inputvalue=this.template.querySelectorAll("lightning-input")[0].value;
     const payload = { isTermvalid:true, searchTerm:inputvalue };

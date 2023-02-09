@@ -33,7 +33,6 @@ export default class demosecondproject extends LightningElement {
             );
         }
     }
-
     async handleMessage(message) {
        console.log('handleMessage:', message);
        this.personName=message.searchTerm;

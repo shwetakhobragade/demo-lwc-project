@@ -8,7 +8,6 @@ export default class Bulma extends LightningElement {
     }
     firstName;
     LastName;
-
     handleChanges(event){
         if(event.target.name==='firstName'){
             this.firstName= event.target.value;

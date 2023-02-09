@@ -5,8 +5,7 @@
                 <lightning-avatar slot="media" src={retrivedUser.avatar_url} 
                 fallback-icon-name="standard:person_account" alternative-text={retrivedUser.login}></lightning-avatar>
                 <ul class="slds-list_horizontal slds-has-dividers_right">
-                    <li class="slds-item">{retrivedUser.type},{retrivedUser.score}</li>
-                    
+                    <li class="slds-item">{retrivedUser.type},{retrivedUser.score}</li>  
                 </ul>
             </lightning-tile>
             <lightning-button-icon icon-name="action:approval" onclick={handlebuttonClick} title="settings"></lightning-button-icon>

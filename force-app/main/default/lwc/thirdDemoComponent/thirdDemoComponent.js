@@ -8,7 +8,6 @@ export default class ThirdDemoComponent extends LightningElement {
      handlebuttonClick(){
           const selectedEvent = new CustomEvent('userclicked', { detail: this.retrivedUser.login });
 
-        
         this.dispatchEvent(selectedEvent);
      }
 
