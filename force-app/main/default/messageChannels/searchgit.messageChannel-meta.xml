@@ -10,5 +10,5 @@
         <description>This whould be the word to searched</description>
         <fieldName>searchTerm</fieldName>
     </lightningMessageFields>
-    <masterLabel>SampleMessageChannel</masterLabel>
+    <masterLabel>SampleMessageChannel </masterLabel>
 </LightningMessageChannel>

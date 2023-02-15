@@ -1,5 +1,13 @@
 div {
-    color: rgb(167, 61, 118);
+    color: rgb(226, 65, 150);
     border: 10px solid currentcolor;
     
   }
+  div {
+    background-color: rgb(246, 208, 250);
+  }
+  :host{
+    background-color: rgb(195, 239, 253);
+}
+
+  

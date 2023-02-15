@@ -1,10 +1,11 @@
 div {
-    color: rgb(0, 153, 255);
+    color: rgb(252, 151, 245);
     border: 10px solid currentcolor;
   }
+  
   div {
-    background-color: rgb(192, 14, 91);
+    background-color: rgb(230, 45, 125);
   }
   :host{
-    background-color: deeppink;
+    background-color: rgb(255, 20, 147);
 }
